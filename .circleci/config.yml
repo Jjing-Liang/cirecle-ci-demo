@@ -1,3 +1,7 @@
+only-tag: &only-tag
+  filters:
+    branches:
+      only: dev
 version: 2
 jobs:
   job1:
@@ -26,9 +30,6 @@ workflows:
   serial:
     jobs:
       - job1:
-          filters:
-            branches:
-              only: master
+        <<: *only-tag
       - job2:
-          requires:
-            - job1
+        <<: *only-tag
