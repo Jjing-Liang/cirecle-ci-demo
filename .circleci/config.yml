@@ -19,14 +19,16 @@ jobs:
 
 workflows:
   version: 2
-  parallel:
-    jobs:
-      - job1
-      - job2
-
+  # parallel:
+  #   jobs:
+  #     - job1
+  #     - job2
   serial:
     jobs:
-      - job1
+      - job1:
+          filters:
+            branches:
+              only: master
       - job2:
           requires:
             - job1
