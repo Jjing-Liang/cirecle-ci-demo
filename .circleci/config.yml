@@ -32,6 +32,6 @@ workflows:
       - job1:
           <<: *only-tag
       - job2:
-        requires:
-          - job1
+          requires:
+            - job1
 
