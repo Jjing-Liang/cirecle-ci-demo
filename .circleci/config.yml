@@ -33,5 +33,5 @@ workflows:
           <<: *only-tag
       - job2:
           requires:
-            - job1
+              - job1
 
