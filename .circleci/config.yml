@@ -10,6 +10,7 @@ jobs:
 
     steps:
       - checkout
+      - run: echo ${env}
       - run: npm install
       - run: npm test
 
@@ -30,6 +31,7 @@ workflows:
   serial:
     jobs:
       - job1:
+        context: qa-context
           <<: *only-tag
       - job2:
           requires:
