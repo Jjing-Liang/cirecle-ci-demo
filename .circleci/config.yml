@@ -19,12 +19,12 @@ jobs:
 
 workflows:
   version: 2
-  one-and-two:
+  parallel:
     jobs:
       - job1
       - job2
 
-  two-and-three:
+  serial:
     jobs:
       - job1
       - job2:
