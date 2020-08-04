@@ -19,14 +19,25 @@ jobs:
 
 workflows:
   version: 2
+<<<<<<< HEAD
   one-and-two:
     jobs:
       - job1
       - job2
 
   two-and-three:
+=======
+  # parallel:
+  #   jobs:
+  #     - job1
+  #     - job2
+  serial:
+>>>>>>> 06b0f91... feat: branch dev 2nd commit
     jobs:
-      - job1
+      - job1:
+          filters:
+            branches:
+              only: master
       - job2:
           requires:
             - job1
