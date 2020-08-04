@@ -1,0 +1,22 @@
+{
+  "name": "circle-ci-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jjing-Liang/circle-ci-demo.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jjing-Liang/circle-ci-demo/issues"
+  },
+  "homepage": "https://github.com/Jjing-Liang/circle-ci-demo#readme",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}
