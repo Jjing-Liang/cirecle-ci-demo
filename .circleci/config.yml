@@ -31,4 +31,4 @@ workflows:
     jobs:
       - job1:
           <<: *only-tag
-      - job2: job2
+      - job2
