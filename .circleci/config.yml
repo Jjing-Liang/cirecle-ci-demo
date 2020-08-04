@@ -31,7 +31,7 @@ workflows:
   serial:
     jobs:
       - job1:
-        context: qa-context
+          context: qa-context
           <<: *only-tag
       - job2:
           requires:
