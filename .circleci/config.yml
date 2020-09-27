@@ -2,6 +2,7 @@ only-tag: &only-tag
   filters:
     tags:
       only: run-tag
+      
 version: 2
 jobs:
   job1:
