@@ -1,3 +1,3 @@
 ## circle-ci-demos
 
-***REMOVED***
+filter: tag
